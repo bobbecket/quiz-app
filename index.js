@@ -30,22 +30,25 @@ function generateQuestionHTML()
     return `<div class="question-${questionNumber}">
       <h2>${STORE[questionNumber].question}</h2>
       <form role="form">
-        <label class="answerOption">
-          <input type="radio" value="${STORE[questionNumber].answers[0]}" name="answer" required>
-          <span>${STORE[questionNumber].answers[0]}</span>
-        </label>
-        <label class="answerOption">
-          <input type="radio" value="${STORE[questionNumber].answers[1]}" name="answer" required>
-          <span>${STORE[questionNumber].answers[1]}</span>
-        </label>
-        <label class="answerOption">
-          <input type="radio" value="${STORE[questionNumber].answers[2]}" name="answer" required>
-          <span>${STORE[questionNumber].answers[2]}</span>
-        </label>
-        <label class="answerOption">
-          <input type="radio" value="${STORE[questionNumber].answers[3]}" name="answer" required>
-          <span>${STORE[questionNumber].answers[3]}</span>
-        </label>
+        <fieldset>
+          <legend>Please select one of the answers below:</legend>
+          <label class="answerOption">
+            <input type="radio" value="${STORE[questionNumber].answers[0]}" name="answer" required>
+            <span>${STORE[questionNumber].answers[0]}</span>
+          </label>
+          <label class="answerOption">
+            <input type="radio" value="${STORE[questionNumber].answers[1]}" name="answer" required>
+            <span>${STORE[questionNumber].answers[1]}</span>
+          </label>
+          <label class="answerOption">
+            <input type="radio" value="${STORE[questionNumber].answers[2]}" name="answer" required>
+            <span>${STORE[questionNumber].answers[2]}</span>
+          </label>
+          <label class="answerOption">
+            <input type="radio" value="${STORE[questionNumber].answers[3]}" name="answer" required>
+            <span>${STORE[questionNumber].answers[3]}</span>
+          </label>
+        </fieldset>
         <button type="submit" class="submitButton">Submit</button>
       </form>
     </div>`;

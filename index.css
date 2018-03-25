@@ -90,15 +90,18 @@ main div {
     margin: 0 auto;
 }
 label:nth-child(1) {
-    background-color: #3866AF
+    background-color: #000000
 }
 label:nth-child(2) {
-    background-color: #387AAF
+    background-color: #3866AF
 }
 label:nth-child(3) {
-    background-color: #3894AF
+    background-color: #387AAF
 }
 label:nth-child(4) {
+    background-color: #3894AF
+}
+label:nth-child(5) {
     background-color: #38A9AF
 }
 label {
@@ -116,6 +119,9 @@ label:hover, label:focus {
 }
 fieldset {
     border: none;
+}
+legend {
+    color: #ffffff;
 }
 input {
     -webkit-appearance: none;
