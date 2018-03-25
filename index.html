@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Guitarist Quiz App</title>
+    <meta name="description" content="Who else wants to test their knowledge of famous guitarists?">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body>
+    <header role="banner">
+      <div class="col-4">
+      <img class="logo" src="https://cdn.pixabay.com/photo/2013/07/12/15/52/lead-guitarist-150470_960_720.png" alt="guitar logo"/>
+      </div>
+      <div class="col-8">
+        <ul>
+          <li>Question: <span class="questionNumber">0</span>/<span class="numQuestions">10</span></li>
+          <li>Score: <span class="score">0</span></li>
+        </ul>
+      </div>
+    </header>
+    <main role="main">
+      <div class="startPage"></div>
+      <div class="questionAnswerForm"></div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="datastore.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
